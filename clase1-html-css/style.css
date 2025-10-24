@@ -1,0 +1,243 @@
+/* ========================================
+   🎨 ESTILOS DE LA TARJETA DE PRESENTACIÓN
+   ========================================
+
+   Instrucciones:
+   - Lee los comentarios para entender qué hace cada sección
+   - Experimenta cambiando valores (colores, tamaños, etc.)
+   - Guarda el archivo (Ctrl + S) y recarga el navegador (F5)
+*/
+
+/* ===== RESET BÁSICO ===== */
+/* Esto elimina márgenes y padding por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== ESTILOS DEL BODY (TODA LA PÁGINA) ===== */
+body {
+    /* Tipo de letra */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    /* Fondo con degradado (puedes cambiar los colores) */
+    /* TODO: Experimenta cambiando los colores del degradado */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+
+    /* Altura mínima = toda la ventana */
+    min-height: 100vh;
+
+    /* Centrar contenido */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Espacio alrededor */
+    padding: 20px;
+}
+
+/* ===== CONTENEDOR PRINCIPAL ===== */
+.container {
+    width: 100%;
+    max-width: 600px; /* Ancho máximo de la tarjeta */
+}
+
+/* ===== TÍTULO PRINCIPAL (H1) ===== */
+h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+
+    /* Sombra en el texto */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+    /* TODO: Prueba cambiar el tamaño o el color */
+}
+
+/* ===== TARJETA PRINCIPAL ===== */
+.card {
+    /* Fondo blanco */
+    background-color: white;
+
+    /* Bordes redondeados */
+    border-radius: 20px;
+
+    /* Espacio interno */
+    padding: 40px;
+
+    /* Sombra para dar profundidad */
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+
+    /* Alineación del texto */
+    text-align: center;
+
+    /* TODO: Prueba cambiar el padding o el border-radius */
+}
+
+/* ===== IMAGEN DE PERFIL ===== */
+.card img {
+    /* Tamaño de la imagen */
+    width: 150px;
+    height: 150px;
+
+    /* Hacer la imagen circular */
+    border-radius: 50%;
+
+    /* Borde de color */
+    border: 5px solid #667eea;
+
+    /* Espacio abajo */
+    margin-bottom: 20px;
+
+    /* TODO: Prueba cambiar el tamaño (width/height) o el color del borde */
+}
+
+/* ===== NOMBRE (H2) ===== */
+.card h2 {
+    color: #2c3e50;
+    font-size: 28px;
+    margin-bottom: 10px;
+
+    /* TODO: Experimenta con diferentes colores o tamaños */
+}
+
+/* ===== SUBTÍTULO (rol/título) ===== */
+.subtitle {
+    color: #7f8c8d;
+    font-size: 16px;
+    margin-bottom: 30px;
+
+    /* TODO: Puedes cambiar el color o tamaño de letra */
+}
+
+/* ===== SECCIONES DE INFORMACIÓN ===== */
+.info {
+    /* Alineación a la izquierda */
+    text-align: left;
+
+    /* Espacio entre secciones */
+    margin-bottom: 25px;
+
+    /* Espacio interno */
+    padding: 20px;
+
+    /* Fondo gris claro */
+    background-color: #f8f9fa;
+
+    /* Bordes redondeados */
+    border-radius: 10px;
+
+    /* TODO: Prueba cambiar el background-color a otro color claro */
+}
+
+/* ===== TÍTULOS DE SECCIONES (H3) ===== */
+.info h3 {
+    color: #667eea;
+    margin-bottom: 10px;
+    font-size: 20px;
+
+    /* TODO: Experimenta con diferentes colores */
+}
+
+/* ===== PÁRRAFOS DENTRO DE .info ===== */
+.info p {
+    color: #555;
+    line-height: 1.6; /* Espacio entre líneas */
+    margin-bottom: 8px;
+}
+
+/* ===== LISTAS (UL) ===== */
+.info ul {
+    list-style: none; /* Quita las viñetas por defecto */
+    padding-left: 0;
+}
+
+/* ===== ELEMENTOS DE LISTA (LI) ===== */
+.info li {
+    color: #555;
+    padding: 8px 0;
+    padding-left: 20px;
+    position: relative;
+}
+
+/* Checkmark (✓) antes de cada elemento */
+.info li:before {
+    content: "✓";
+    color: #667eea;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+
+    /* TODO: Puedes cambiar el símbolo "✓" por otro: "→", "•", "★" */
+}
+
+/* ===== ENLACES (A) ===== */
+a {
+    color: #667eea;
+    text-decoration: none; /* Sin subrayado por defecto */
+    font-weight: bold;
+
+    /* TODO: Prueba diferentes colores */
+}
+
+/* Efecto al pasar el mouse sobre un enlace */
+a:hover {
+    color: #764ba2;
+    text-decoration: underline;
+}
+
+/* ========================================
+   🎯 RETOS OPCIONALES
+   ========================================
+
+   Descomenta (quita los /* y *\/) para activar estos efectos:
+*/
+
+/* RETO 1: Efecto hover en la tarjeta */
+/*
+.card:hover {
+    transform: scale(1.05);
+    transition: all 0.3s ease;
+}
+*/
+
+/* RETO 2: Animación de entrada */
+/*
+.card {
+    animation: aparecer 0.5s ease;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+*/
+
+/* RETO 3: Cambiar los colores de fondo */
+/* Cambia los colores del degradado en body (línea 24-25) */
+/* Ejemplos:
+   - Rojo: #e74c3c y #c0392b
+   - Verde: #27ae60 y #16a085
+   - Naranja: #f39c12 y #e67e22
+*/
+
+/* ========================================
+   💡 NOTAS IMPORTANTES
+   ========================================
+
+   - Colores en CSS: puedes usar nombres (red, blue) o códigos hexadecimales (#667eea)
+   - Tamaños: px (píxeles), rem, em, % (porcentaje)
+   - Margin: espacio FUERA del elemento
+   - Padding: espacio DENTRO del elemento
+   - Border-radius: redondea las esquinas
+
+   ¡No tengas miedo de experimentar! Siempre puedes deshacer cambios.
+*/
